@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 17 Trial Version - https://www.wysiwygwebbuilder.com">
+<link href="PAGER1.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+</head>
+<body>
+<div id="wb_Shape3" style="position:absolute;left:37px;top:233px;width:694px;height:34px;z-index:0;">
+<img src="images/img0002.png" id="Shape3" alt="" width="694" height="34" style="width:694px;height:34px;"></div>
+<div id="wb_Shape2" style="position:absolute;left:37px;top:149px;width:694px;height:81px;z-index:1;">
+<img src="images/img0003.png" id="Shape2" alt="" width="694" height="81" style="width:694px;height:81px;"></div>
+<div id="wb_Shape1" style="position:absolute;left:37px;top:25px;width:694px;height:121px;z-index:2;">
+<img src="images/img0001.png" id="Shape1" alt="" width="694" height="121" style="width:694px;height:121px;"></div>
+<a href="https://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb17.png" alt="WYSIWYG Web Builder" style="position:absolute;left:441px;top:967px;margin: 0;border-width:0;z-index:250" width="16" height="16"></a>
+<div id="wb_Image1" style="position:absolute;left:57px;top:31px;width:647px;height:112px;z-index:4;">
+<img src="images/Asset 17@300x.png" id="Image1" alt="" width="647" height="112"></div>
+
+<form method="post"action=""name="PagarFome" id="PagarFome">
+
+<input type="number" id="serialnumber" style="position:absolute;left:105px;top:159px;width:122px;height:16px;z-index:5;" name="SerialNumber" value="" spellcheck="false">
+<label for="serialnumber" id="Label1" style="position:absolute;left:54px;top:160px;width:50px;height:17px;line-height:17px;z-index:6;">Serial:</label>
+
+<input type="date" id="datebox" style="position:absolute;left:572px;top:159px;width:122px;height:16px;z-index:7;" name="DateBox" value="" autofocus spellcheck="false">
+<label for="datebox" id="Label2" style="position:absolute;left:524px;top:160px;width:40px;height:17px;line-height:17px;z-index:8;">Date:</label>
+
+<input type="time" id="timebox" style="position:absolute;left:338px;top:159px;width:122px;height:16px;z-index:9;" name="TimeBox" value="" autofocus spellcheck="false">
+<label for="timebox" id="Label3" style="position:absolute;left:290px;top:160px;width:40px;height:17px;line-height:17px;z-index:10;">Time:</label>
+
+<input type="text" id="name" style="position:absolute;left:105px;top:193px;width:254px;height:16px;z-index:11;" name="Name" value="" spellcheck="false">
+<label for="name" id="Label4" style="position:absolute;left:54px;top:194px;width:43px;height:17px;line-height:17px;z-index:12;">Name:</label>
+
+<input type="number" id="phone" style="position:absolute;left:455px;top:193px;width:239px;height:16px;z-index:13;" name="Phone" value="" spellcheck="false">
+<label for="phone" id="Label5" style="position:absolute;left:397px;top:194px;width:49px;height:17px;line-height:17px;z-index:14;">Phone:</label>
+
+<label for="" id="Label6" style="position:absolute;left:77px;top:238px;width:360px;height:18px;line-height:18px;z-index:15;">DESCRIPTION</label>
+<input type="text" id="description1" style="position:absolute;left:160px;top:270px;width:275px;height:18px;z-index:16;" name="Description1" value="" spellcheck="false">
+
+<input type="text" id="qty1" style="position:absolute;left:445px;top:270px;width:65px;height:18px;z-index:17;" name="Qty1" value="" spellcheck="false">
+<label for="" id="Label7" style="position:absolute;left:445px;top:238px;width:67px;height:18px;line-height:18px;z-index:18;">QTY</label>
+
+<input type="text" id="rate1" style="position:absolute;left:520px;top:270px;width:94px;height:18px;z-index:19;" name="Rate1" value="" spellcheck="false">
+<label for="" id="Label8" style="position:absolute;left:520px;top:238px;width:96px;height:18px;line-height:18px;z-index:20;">RATE</label>
+
+<input type="text" id="amount1" style="position:absolute;left:624px;top:270px;width:97px;height:18px;z-index:21;" name="Amount1" value="" spellcheck="false">
+<label for="" id="Label9" style="position:absolute;left:627px;top:238px;width:96px;height:18px;line-height:18px;z-index:22;">AMOUNT</label>
+
+<select name="Combobox1" size="1" id="Combobox1" style="position:absolute;left:37px;top:270px;width:123px;height:28px;z-index:23;">
+<option selected value="flowers">FLOWORS</option>
+<option value="printing">PRINTING</option>
+</select>
+<input type="submit" id="" name="submit" value="Submit" style="position:absolute;left:37px;top:300px;width:694px;height:30px;z-index:24;">
+
+</form>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz-LeZ5fFBQsQTPXszz9xdEKlkra4dhcgbWoybO4dLrHq_06Jd5dWIYZ7yNbQldF_i6/exec'
+    const form = document.forms['PagarFome']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
